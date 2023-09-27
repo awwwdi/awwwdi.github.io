@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kar's Portfolio</title>
     <style>
         body {
-            background-color: #6EA7A7;
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-        }
-
-        .container {
-            border: 2px solid #000;
-
-            width: 300px;
-            padding: 20px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            background-color: #FFF;
-
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
+            background-color: #f2f2f2; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Align content to the right */
         }
 
         .header {
+            /* background-color: #333; */
+            color: black;
             text-align: center;
-            margin-bottom: 20px;
+            padding: 1rem;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Add shadow to the header */
         }
 
-        .header h2 {
-            color: #007BFF;
-            font-size: 24px;
-            margin: 0;
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+            margin: 2rem;
         }
 
-        .info {
-            text-align: center;
+        .portfolio {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px; /* Rounded corners */
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the container */
+            margin: 1rem; /* Add some margin between containers */
+            width: calc(25% - 2rem); /* Each container takes 25% of the width with some margin in between */
         }
 
-        .info h3 {
-            color: #333;
-            font-size: 18px;
-            margin: 0;
+        .portfolio h2 {
+            font-size: 2.5rem; /* Larger font size */
+            margin-bottom: 1rem;
+            color: #333; /* Darker text color */
+        }
+
+        .portfolio p {
+            font-size: 1.2rem; /* Slightly larger text size */
         }
 
         .task-list {
@@ -51,56 +55,79 @@
         }
 
         .task-list li {
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         .task-list a {
-            display: block;
-            padding: 10px;
-            background-color: #007BFF;
-
-            color: #FFF;
-
-            text-align: center;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
+            color: #007BFF;
+            font-weight: bold; /* Make links bold */
         }
 
         .task-list a:hover {
-            background-color: #0056b3;
-
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
+    <div class="header">
+        <h1>Aditya Kar's Portfolio</h1>
+        <p>Student ID: 21BEC1320</p>
+    </div>
     <div class="container">
-        <div class="header">
-            <h2>Aditya Kar</h2>
-            <p>21BEC1320</p>
+        <!-- HTML Tasks -->
+        <div class="portfolio">
+            <h2>HTML Tasks</h2>
+            <ul class="task-list">
+                <li><a href="HTML/task1.html">First Task</a></li>
+                <li><a href="HTML/task2.html">Second Task</a></li>
+                <li><a href="HTML/task3.html">Third Task</a></li>
+                <li><a href="HTML/task4.html">Fourth Task</a></li>
+                <li><a href="HTML/task5.html">Fifth Task</a></li>
+            </ul>
         </div>
-        <div class="info">
-            <h3>All the HTML tasks</h3>
+
+        <!-- CSS Tasks -->
+        <div class="portfolio">
+            <h2>CSS Tasks</h2>
+            <ul class="task-list">
+                <li><a href="CSS/task1.html">First Task</a></li>
+                <li><a href="CSS/task2.html">Second Task</a></li>
+                <li><a href="CSS/task3.html">Third Task</a></li>
+                <li><a href="CSS/task4.html">Fourth Task</a></li>
+                <li><a href="CSS/task5.html">Fifth Task</a></li>
+                <li><a href="CSS/task6.html">Sixth Task</a></li>
+                <li><a href="CSS/task7.html">Seventh Task</a></li>
+            </ul>
         </div>
-        <ul class="task-list">
-            <li>
-                <a href="HTML/task 1.html">First Task</a>
-            </li>
-            <li>
-                <a href="HTML/task 2.html">Second Task</a>
-            </li>
-            <li>
-                <a href="HTML/task 3.html">Third Task</a>
-            </li>
-            <li>
-                <a href="HTML/task 4.html">Fourth Task</a>
-            </li>
-            <li>
-                <a href="HTML/task 5.html">Fifth Task</a>
-            </li>
-        </ul>
+
+        <!-- Bootstrap Tasks -->
+        <div class="portfolio">
+            <h2>Bootstrap Tasks</h2>
+            <ul class="task-list">
+                <li><a href="BOOTSTRAP/task1.html">First Task</a></li>
+                <li><a href="BOOTSTRAP/task2.html">Second Task</a></li>
+                <li><a href="BOOTSTRAP/task3.html">Third Task</a></li>
+                <li><a href="BOOTSTRAP/task4.html">Fourth Task</a></li>
+                <li><a href="BOOTSTRAP/task5.html">Fifth Task</a></li>
+                <li><a href="BOOTSTRAP/task6.html">Sixth Task</a></li>
+            </ul>
+        </div>
+
+        <!-- JavaScript Tasks -->
+        <div class="portfolio">
+            <h2>JavaScript Tasks</h2>
+            <ul class="task-list">
+                <li><a href="JAVASCRIPT/task1.html">First Task</a></li>
+                <li><a href="JAVASCRIPT/task2.html">Second Task</a></li>
+                <li><a href="JAVASCRIPT/task3.html">Third Task</a></li>
+                <li><a href="JAVASCRIPT/task4.html">Fourth Task</a></li>
+                <li><a href="JAVASCRIPT/task5.html">Fifth Task</a></li>
+                <li><a href="JAVASCRIPT/task6.html">Sixth Task</a></li>
+                <li><a href="JAVASCRIPT/task7.html">Seventh Task</a></li>
+                <li><a href="JAVASCRIPT/task8.html">Eight Task</a></li>
+            </ul>
+        </div>
     </div>
 </body>
-
 </html>
